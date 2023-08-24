@@ -36,7 +36,7 @@
             </center>
 
             <div class="input-group">
-				<button name="submit-m" class="btn">Get Started</button>
+				<button name="submit-m" class="btn">Get Started </button>
 			</div>
             
 			<p class="login-register-text"><a href="reset-password.php" class="login-forgot-password" >Terms and condition will apply.</a></p>
