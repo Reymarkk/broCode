@@ -5,7 +5,7 @@ if(isset($_POST["submit"])) {
     $username = $_POST["uid"];
     $password = $_POST["password"];
 
-    require_once 'dbh.inc.php';
+    require_once 'dbh.inc.php'; //to connect in the database
     require_once 'functions.inc.php';
 
     //error handlers

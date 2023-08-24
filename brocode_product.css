@@ -1,0 +1,565 @@
+
+	*
+	{
+		margin: 0;
+		padding: 0;
+		font-family: Poppins;
+	}
+
+
+	body
+	{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		background: #0a1040;
+	}
+
+
+
+
+						 								/*  		
+						 								
+
+						 									         	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       
+
+						 								
+						 																Product
+
+						 								
+						 								            	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+						 								*/						 								
+
+	.whole_content
+	{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.margination
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		
+
+	}
+
+	.container
+	{
+		position: relative;
+		margin-right: 90px;
+
+	}
+
+	.container2
+	{
+		position: relative;
+
+
+	}
+
+	.container .card,
+	.container2 .card2
+	{
+		position: relative;
+		width: 320px;
+		height: 450px;
+		background: #0001;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+							
+	.container .card:before
+	{		
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #a4aba5;
+		opacity: 0.7;
+		clip-path: circle(200px at 80% 20%);
+		transition: 0.3s ease-in-out;
+	}
+
+	.container2 .card2:before
+	{		
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #b39307;
+		opacity: 0.7;
+		clip-path: circle(200px at 80% 20%);
+		transition: 0.3s ease-in-out;
+	}
+
+	.container .card:hover:before,
+	.container2 .card2:hover:before
+	{		
+		clip-path: circle(330px at 80% -20%);
+	}
+
+	.container .card:after,
+	.container2 .card2:after
+	{		
+		content: 'code';
+		position: absolute;
+		top: 30%;
+		left: -20%;
+		font-size: 12em;
+		font-weight: 800;
+		font-style: italic;
+		color: rgba(255, 255, 255, 0.1);
+	}
+
+	.container .card .image_box,
+	.container2 .card2 .image_box2
+	{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10000;
+		width: 100%;
+		height: 220px;
+		transition: 0.5s;
+	}
+
+	.container .card:hover .image_box,
+	.container2 .card2:hover .image_box2
+
+	{
+		top: 0%;
+		transform: translateY(0%);
+	}
+
+	.container .card .image_box img,
+	.container2 .card2 .image_box2 img
+	{
+			position: absolute;
+			height: 65%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	.container .card .box_content,
+	.container2 .card2 .box_content2
+	{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		transition: 1s;
+		z-index: 10;
+	}
+
+	.container .card:hover .box_content,
+	.container2 .card2:hover .box_content2
+	{
+		height: 210px;
+
+	}
+
+	.container .card .box_content h2,
+	.container2 .card2 .box_content2 h2
+	{
+		position: relative;
+		font-weight: 700;
+		font-style: italic;
+		letter-spacing: 1px;
+		color: white;
+	}
+
+	.container .card .box_content .Model,
+	.container .card .box_content .color,
+
+	.container2 .card2 .box_content2 .Model2,
+	.container2 .card2 .box_content2 .color2
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 10px;
+		transition: 0.2s;
+		visibility: hidden;
+	}		
+
+	.container .card:hover .box_content .Model,
+	.container2 .card2:hover .box_content2 .Model2
+	{
+		opacity: 1;
+		visibility: visible;
+		transition-delay: 0.2s;
+	}
+
+	.container .card:hover .box_content .color,
+	.container2 .card2:hover .box_content2 .color2
+	{
+		opacity: 1;
+		visibility: visible;
+		transition-delay: 0.5s;
+	}
+
+	.container .card .box_content .Model h3,
+	.container2 .card2 .box_content2 .Model2 h3
+	{
+		color: white;
+		font-weight: 300;
+		font-size: 13px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.container .card .box_content .color h5,
+	.container2 .card2 .box_content2 .color2 h5
+	{
+		color: white;
+		font-weight: 300;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.container .card .box_content a,
+	.container2 .card2 .box_content2 a
+	{
+		display: inline-block;
+		padding: 10px 20px;
+		background: white;
+		border-radius: 4px;
+		margin-top: 10px;
+		text-decoration: none;
+		font-weight: 600;
+		color: #111;
+		opacity: 0;
+		transform: translateY(50px);
+		transition: 0.3s;
+	}
+
+	.container .card:hover .box_content a,
+	.container2 .card2:hover .box_content2 a
+	{
+
+		opacity: 1;
+		transform: translateY(0px);
+		transition-delay: 0.5s;
+	}
+
+
+
+						 								/*  		
+						 								
+
+						 									         	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       
+
+						 								
+						 																PARAGRAPH MID
+
+						 								
+						 								            	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+						 													 								
+*/	
+	.text_mid 
+	{
+		top: 0;
+		margin-bottom: 20px;
+	}
+
+
+	.text_mid2 
+	{
+		margin-bottom: 200px;
+	}
+
+	.text_mid p,
+	.text_mid2 p 
+	{
+		color: white;
+		width: 99%;
+		text-align: justify;			
+	}
+
+	.text_mid p span
+	{
+		color: silver;
+		font-weight: 700;
+		font-size: 53px;
+		text-transform: uppercase;
+	}
+
+	.text_mid2 p span
+	{
+		color: gold;
+		font-weight: 700;
+		font-size: 53px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	section 
+	{
+	  min-height: 100vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	section .container
+	{
+	  margin: 10px;
+	}
+
+	section .text-container
+	{
+	  display: flex;
+	}
+	section .text-container .text-box
+	{
+	  margin: 20px;
+	  padding: 20px;
+	}
+
+
+	@media (max-width: 900px)
+	{
+	  section .text-container
+	  {
+	    flex-direction: column;
+	  }
+	}
+
+	.reveal
+	{
+	  position: relative;
+	  transform: translateY(150px);
+	  opacity: 0;
+	  transition: 2s all ease;
+	}
+
+	.reveal.active
+	{
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+
+
+
+
+						 								/*  		
+
+
+						 									         	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       
+
+						 								
+						 																Foooter
+
+						 								
+						 								            	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+						 								*/						 								
+
+	footer 
+	{
+		position: relative;
+		display: flex;
+		width: 92%;
+		background: #3586ff;
+		min-height: 80px;
+		padding: 20px 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	footer .social_icon
+
+	{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+	}
+
+	footer .social_icon li
+
+	{
+		list-style: none;
+	}
+
+	footer .social_icon li a 
+	{
+		font-size: 2em;
+		color: white;
+		margin: 0 10px;
+		display: inline-block;
+		transition: 0.3s;
+	}
+
+	footer .social_icon li a:hover 
+	{
+		transform: translateY(-10px);
+	}
+
+
+	footer p 
+	{
+		color: white;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	footer .wave
+	{
+		position: absolute;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: url(wave.png);
+		background-size: 1000px 100px;
+	}
+
+	footer .wave#wave1
+	{
+		z-index: 1000;
+		opacity: 1;
+		bottom: 0;
+		animation: animateWave 4s linear infinite;
+	}
+	footer .wave#wave2
+	{
+		z-index: 999;
+		opacity: 0.5;
+		bottom: 10px;
+		animation: animateWave_02 4s linear infinite;
+	}
+	footer .wave#wave3
+	{
+		z-index: 1000;
+		opacity: 0.2;
+		bottom: 15px;
+		animation: animateWave 3s linear infinite;
+	}
+	footer .wave#wave4
+	{
+		z-index: 999;
+		opacity: 0.7;
+		bottom: 20px;
+		animation: animateWave_02 3s linear infinite;
+	}
+
+	@keyframes animateWave 
+	{
+		0%
+		{
+			background-position-x: 1000px;
+		}
+		100%
+		{
+			background-position-x: 0px;
+		}
+	}
+
+	@keyframes animateWave_02 
+	{
+		0%
+		{
+			background-position-x: 0px;
+		}
+		100%
+		{
+			background-position-x: 1000px;
+		}
+	}
+
+
+						 								/*  		
+
+
+						 									         	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       
+
+						 								
+						 																Scroll Bar RGB OSHESH
+
+						 								
+						 								            	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+						 								*/						 			
+
+::-webkit-scrollbar
+{
+width: 0;
+}
+
+#scrollPath 
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+#progressBar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate 
+{
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50% 
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressBar:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+
+#progressBar:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+
