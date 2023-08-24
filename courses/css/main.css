@@ -3,7 +3,7 @@
   --primary-color: #FFAA33;
   /*to change color easily*/
   --secondary-color: #edd8bb;
-  --third-color: #064C6B;
+  --third-color: #061C45;
   --fourth-color: #064C6B;
   --hehe-color: #051432;
 }
@@ -14,6 +14,11 @@ body {
   margin: 0;
   color: white;
 }
+.header sticky{
+padding: 5px 100px;
+background: #fff;
+}
+
 
 .navbar {
   padding: 1em;
@@ -21,6 +26,7 @@ body {
 }
 
 .navbar .logo {
+padding-left: 1em;
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -32,10 +38,13 @@ body {
 }
 
 .navbar nav {
+
   display: none;
 }
 
 .navbar .container {
+
+padding-left: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +68,7 @@ ul {
 section.hero {
   background-color: #061C45;
   padding: 5em 0em 7em;
-  background-image: url("");
+  background-image: url("../images/bg-mobile-legit.png");
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -261,6 +270,7 @@ nav li a:hover {
     display: none;
   }
   .navbar .container {
+    position: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
@@ -418,6 +428,4 @@ nav li a:hover {
     top: 2em;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
-

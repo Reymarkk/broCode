@@ -22,9 +22,12 @@ body {
     width: 400px;
     min-height: 400px;
     background: #FFF;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
-    padding: 40px 30px;
+    padding: 40px 40px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
 }
 
 .container .login-text {
@@ -175,4 +178,15 @@ body {
     .container .login-social a {
         display: block;
     }
+}
+
+hr.line {
+    width: 80%;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#666;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
 }

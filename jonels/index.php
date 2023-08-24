@@ -1,16 +1,15 @@
 <?php
     include_once 'header.php';
 ?>
-
-    <!-- this call header file; makes the code shorter -->
+<!-- this call header file; makes the code shorter -->
 
 
     <section class="hero">
         
         <div class="container">
             <div class="left-col">
-            <p class="subhead" data-aos="fade-up" data-aos-delay="800">"The Bro Code of Coding"</p>
-                <h1 data-aos="zoom-out" data-aos-delay="2000">An E-Learning Platform Service for Programming, Software/Web Development & more!</h1>
+                <p class="subhead" data-aos="fade-up" data-aos-delay="800">We'll help you code pareh</p>
+                <h1 data-aos="zoom-out" data-aos-delay="2000">A E-Learning based platform for programmer, shesh</h1>
                 <div class="hero-cta" >
                 <?php
                     if (isset($_SESSION["useruid"])) {
@@ -30,16 +29,15 @@
     <img src="images/man-mobile-legit.png" class="man" alt="Illustration">
     </section>
 
-    <a id="features"></a>
     <section class="features-section">
       <div class="container">
           <h1> Features </h1>
           <ul class="features-list">
-              <li data-aos="fade-up-right" data-aos-delay=""> Start for Free with the 30-Day Free trial</li>
-              <li data-aos="fade-up-right">At your service 24/7</li>
-              <li data-aos="fade-up-right">Multiple Course Selections</li>
-              <li data-aos="fade-up-right">Verified Certifications</li>
-              <li data-aos="fade-up-right">Connect with a vast Community</li>
+              <li data-aos="fade-up-right" data-aos-delay="">Shessh</li>
+              <li data-aos="fade-up-right">Lets go bro</li>
+              <li data-aos="fade-up-right">I'll help you pareh</li>
+              <li data-aos="fade-up-right">ngl real t to pareh</li>
+              <li data-aos="fade-up-right">egg woffles is my go to pareh,sheesh</li>
           </ul>
 
           <img src="images/mema2.svg" alt="Toilet paper">
@@ -47,7 +45,7 @@
       </div>
 
   </section>
-  <a id="testimonials"></a>
+
   <section class="testimonials-section">
     <div class="container">
         <ul>
@@ -58,13 +56,13 @@
                 <cite>- Reymark Calexterio</cite>
             </li>
             <li>
-                <img src="groupphoto/Rubi_MaryRose.png" alt="person">
+                <img src="groupphoto/person.svg" alt="person">
 
                 <blockquote>"Thanks to broCode I was able to land my job at MBI Industries, the courses provided are easy to understand and follow, I was able to master COBOL and C# in just 1 month. I was accepted immediately!."</blockquote>
                 <cite>- Mary Rose Rubi</cite>
             </li>
             <li>
-                <img src="groupphoto/Lauden_Timothy.jpg" alt="person">
+                <img src="groupphoto/person.svg" alt="person">
 
                 <blockquote>"I probably have failed my College Degree if it wasn't for broCode. Now I am a Game Developer and CEO of FLOW Games and we have just released our 3rd Installment of the Award Winning Series, "Need for Gas: High Prices".</blockquote>
                 <cite>- Timothy Lauden</cite>
@@ -73,7 +71,7 @@
     </div>
   </section>
 
-  <a id="contact"></a>
+
   <section class="contact-section">
     <div class="container">
         <div class="contact-left">
@@ -97,12 +95,37 @@
         </div>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
+  <section>
+ 
+  </section>
 <?php
     include_once 'footer.php';
-?>            
+?>
+  
+  <!--Javascript-->
+  <!--
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+
+
+
+      const mobileBtn = document.getElementById('mobile-cta');
+          nav = document.querySelector('nav');
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click' , () => {
+          nav.classList.add('menu-btn');
+      })
+        
+      mobileBtnExit.addEventListener('click' , () => {
+          nav.classList.remove('menu-btn');
+      })
+  </script>
+    
+  </body>
+</html>
+-->
